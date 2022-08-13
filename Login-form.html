@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="shortcut icon" href="/CSS/faveicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="faveicon.png" type="image/x-icon" />
   </head>
 
   <body>
     <div class="form_box">
       <h1>LOGIN Form</h1>
       <form
-        action="/HTML/static-grid.html"
+        action="static-grid.html"
         autocomplete="off"
-        onsubmit="return login_form_validation()">
+        onsubmit="return login_form_validation()"
+      >
         <div class="input_box">
-          <input type="text" name="email" placeholder=" " id="login_email" />
+          <input type="email" name="email" placeholder=" " id="login_email" />
           <label for="email">Your Email</label>
           <p id="login_email_error" class="error"></p>
         </div>
@@ -37,8 +38,12 @@
           <input type="submit" name="submit" value="Submit" id="submit" />
         </div>
 
+        <div class="forget">
+          <a href="#" class="color links">Forgot Password?</a>
+        </div>
+
         <div class="account">
-          <p>Don't have an account? <a href="/index.html">SINGUP</a></p>
+          <p>Don't have an account? <a href="index.html" class="color links">SINGUP</a></p>
         </div>
       </form>
     </div>
@@ -47,10 +52,10 @@
       <p>
         Desing & Developed By &copy;
         <a href="https://www.spraxa.com/" target="_blank"
-          >Spraxa Solution Pvt. Ltd.</a
+           class="color links">Spraxa Solution Pvt. Ltd.</a
         >
       </p>
     </footer>
-    <script src="/Javascript/login-form.js"></script>
+    <script src="login-form.js"></script>
   </body>
 </html>
