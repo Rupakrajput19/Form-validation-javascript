@@ -16,26 +16,26 @@ function login_form_validation() {
   clearError();
   
   // validation for email
-  if (login_email.value == "") {
+  if (login_email.value.trim() == "") {
     document.getElementById("login_email_error").innerHTML = "**Email is Required!";
     returnval = false;
   } 
 
 
   // validation for password
-  if (login_password.value == "") {
+  if (login_password.value.trim() == "") {
       document.getElementById("login_password_error").innerHTML =
-        "**password is Required!";
+        "**Password is Required!";
       returnval = false;
     } 
-    else if ((login_password.value.length < 8) || (login_password.value.length > 20)) {
+    else if ((login_password.value.trim().length < 8) || (login_password.value.trim().length > 20)) {
       document.getElementById("login_password_error").innerHTML =
-      "**password must be in bettween 8 and 20 character.";
+      "**Password must be in bettween 8 and 20 character.";
       returnval = false;
     } 
     else if (login_password.value !== "Rupak19@#") {
        document.getElementById("login_password_error").innerHTML =
-         "**Wrong password! </br> (Password Hint:- 'Rupak19@#' )";
+         "**Wrong password! </br>   (Password Hint:- 'Rupak19@#' )";
        returnval = false;
      }
 
