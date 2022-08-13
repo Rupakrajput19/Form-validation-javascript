@@ -1,6 +1,6 @@
 // Validation for Registration-form
 
-let Name = document.getElementById("name");
+let name = document.getElementById("name");
 let email = document.getElementById("email");
 let mobile = document.getElementById("mobile");
 let password = document.getElementById("password");
@@ -18,15 +18,14 @@ function form_validation() {
   clearError();
 
   // validation for name
-  if (Name.value.trim() == "") {
+  if (name.value.trim() == "") {
     document.getElementById("name_error").innerHTML = "**Name is Required!";
     returnvalue = false;
-    console.log(Name);
-  } else if (Name.value.trim().length < 3 || Name.value.trim().length > 20) {
+  } else if (name.value.trim().length < 3 || name.value.trim().length > 20) {
     document.getElementById("name_error").innerHTML =
       "**Name must be in bettween 3 and 20 character.";
     returnvalue = false;
-  } else if (!isNaN(Name.value.trim())) {
+  } else if (!isNaN(name.value.trim())) {
     document.getElementById("name_error").innerHTML =
       "**Enter character only.";
     returnvalue = false;
@@ -64,7 +63,8 @@ function form_validation() {
     returnvalue = false;
   } else if (
     !(password.value.trim().match(/[0-9]/))) {
-    document.getElementById("password_error").innerHTML = "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
+    document.getElementById("password_error").innerHTML = 
+      "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
     returnvalue = false;
   } 
   else if (!(password.value.trim().match(/[A-Z]/))) {
@@ -96,4 +96,3 @@ function form_validation() {
 
   return returnvalue;
 }
-console.log(Name);
