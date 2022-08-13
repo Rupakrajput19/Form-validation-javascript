@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ritu Kumar" />
+    <meta
+      name="description"
+      content="User Data storing web page of Spraxa Solution Pvt. Ltd."
+    />
+    <!-- <link rel="shortcut icon" href="https://www.spraxa.com/img/Spraxa_logo.png" type="image/x-icon"> -->
+    <link
+      rel="shortcut icon"
+      href="https://media-exp1.licdn.com/dms/image/C510BAQEpIW8gZoabaA/company-logo_200_200/0/1539254006677?e=2147483647&v=beta&t=5dDA16dxFpJii5cG89u5AENZTPsehq5cziTRnQpFGl4"
+      type="image/x-icon"
+    />
     <title>Static Grid Data Page</title>
-</head>
-<body>
-    <H1>hii</H1>
-</body>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: antiquewhite;
+        font-family: sans-serif;
+      }
+      .container {
+        margin: 50px;
+        border: 2px solid black;
+      }
+      .container h1 {
+        margin: 20px;
+        text-align: center;
+        text-decoration: underline;
+      }
+      .container .grid_box {
+        border: 2px solid red;
+      }
+      .container .grid_box .details {
+        border: 2px solid green;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        /* grid-template-rows: repeat(6, auto); */
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .container .grid_box .details > .item {
+        border: 2px solid blue;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 5px;
+        /* width: 150px; */
+      }
+
+      .details .s_no {
+        width: 80px;
+      }
+      .details .user_id {
+        width: 120px;
+      }
+      .details .name {
+        width: 150px;
+      }
+      .details .email {
+        width: 250px;
+      }
+      .details .mobile {
+        width: 120px;
+      }
+      .details .password {
+        width: 150px;
+      }
+      .footer_detail {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Spraxa Solution Pvt. Ltd.</h1>
+
+      <section class="grid_box">
+        <div class="details">
+          <div class="item s_no"><h4>S. No.</h4></div>
+          <div class="item user_id"><h4>User ID</h4></div>
+          <div class="item name"><h4>Name</h4></div>
+          <div class="item email"><h4>Email ID</h4></div>
+          <div class="item mobile"><h4>Mobile Number</h4></div>
+          <div class="item password"><h4>Password</h4></div>
+        </div>
+        <div class="details">
+          <div class="item s_no"><detail>1.</detail></div>
+          <div class="item user_id"><detail>Ritu2000</detail></div>
+          <div class="item name"><detail>Ritu kumar</detail></div>
+          <div class="item email">
+            <detail>Ritukumar456061@gmail.com</detail>
+          </div>
+          <div class="item mobile"><detail>9599408303</detail></div>
+          <div class="item password"><detail>Ritu2022@#</detail></div>
+        </div>
+        <div class="details">
+          <div class="item s_no"><detail>2.</detail></div>
+          <div class="item user_id"><detail>rupak2022</detail></div>
+          <div class="item name"><detail>Rupak Rajput</detail></div>
+          <div class="item email">
+            <detail>rupakrajput161@gmail.com</detail>
+          </div>
+          <div class="item mobile"><detail>7065308276</detail></div>
+          <div class="item password"><detail>Rupak@182116111</detail></div>
+        </div>
+        <div class="details">
+          <div class="item s_no"><detail>3.</detail></div>
+          <div class="item user_id"><detail>abhishek1998</detail></div>
+          <div class="item name"><detail>Abhishek</detail></div>
+          <div class="item email"><detail>abhik8527@gmail.com</detail></div>
+          <div class="item mobile"><detail>8527752633</detail></div>
+          <div class="item password"><detail>@bhishek23</detail></div>
+        </div>
+        <div class="details">
+          <div class="item s_no"><detail>4.</detail></div>
+          <div class="item user_id"><detail>deepak1995</detail></div>
+          <div class="item name"><detail>Deepak</detail></div>
+          <div class="item email"><detail>deepak1913@gmail.com</detail></div>
+          <div class="item mobile"><detail>9234567891</detail></div>
+          <div class="item password"><detail>Deepak@1913</detail></div>
+        </div>
+        <div class="details">
+          <div class="item s_no"><detail>5.</detail></div>
+          <div class="item user_id"><detail>rajat2003</detail></div>
+          <div class="item name"><detail>Rajat kumar</detail></div>
+          <div class="item email"><detail>rajatkumar@gmail.com</detail></div>
+          <div class="item mobile"><detail>9876543210</detail></div>
+          <div class="item password"><detail>rajat@19</detail></div>
+        </div>
+      </section>
+    </main>
+      
+      <footer class="footer_detail">
+          <p>
+              Desing & Developed By &copy;
+              <a href="https://www.spraxa.com/" target="_blank"
+              >Spraxa Solution Pvt. Ltd.</a
+              >
+            </p>
+        </footer>
+  </body>
 </html>
