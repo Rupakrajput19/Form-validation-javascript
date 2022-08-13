@@ -18,72 +18,73 @@ function form_validation() {
   clearError();
 
   // validation for name
-  if (Name.value == "") {
+  if (Name.value.trim() == "") {
     document.getElementById("name_error").innerHTML = "**Name is Required!";
     returnvalue = false;
-  } else if (Name.value.length < 3 || Name.value.length > 20) {
+    console.log(Name);
+  } else if (Name.value.trim().length < 3 || Name.value.trim().length > 20) {
     document.getElementById("name_error").innerHTML =
       "**Name must be in bettween 3 and 20 character.";
     returnvalue = false;
-  } else if (!isNaN(Name.value)) {
+  } else if (!isNaN(Name.value.trim())) {
     document.getElementById("name_error").innerHTML =
       "**Enter character only.";
     returnvalue = false;
   }
 
   // validation for email
-  if (email.value == "") {
+  if (email.value.trim() == ""){
     document.getElementById("email_error").innerHTML = "**Email is Required!";
     returnvalue = false;
   }
 
   // validation for mobile
-  if (mobile.value == "") {
+  if (mobile.value.trim() == "") {
     document.getElementById("mobile_error").innerHTML =
       "**Mobile number Required!";
     returnvalue = false;
-  } else if (mobile.value.length != 10) {
+  } else if (mobile.value.trim().length != 10) {
     document.getElementById("mobile_error").innerHTML =
-      "**Enter the ten digit mobile number.";
+      "**Enter the valid ten digit mobile number.";
     returnvalue = false;
-  } else if (isNaN(mobile.value)) {
+  } else if (isNaN(mobile.value.trim())) {
     document.getElementById("mobile_error").innerHTML =
       "**Enter the numbers only.";
     returnvalue = false;
   }
 
   // validation for password
-  if (password.value == "") {
+  if (password.value.trim() == "") {
     document.getElementById("password_error").innerHTML =
       "**Password is Required!";
     returnvalue = false;
-  } else if (password.value.length < 8 || password.value.length > 20) {
+  } else if (password.value.trim().length < 8 || password.value.trim().length > 20) {
     document.getElementById("password_error").innerHTML =
       "**Password must be in bettween 8 and 20 character.";
     returnvalue = false;
   } else if (
-    !(password.value.match(/[0-9]/))) {
+    !(password.value.trim().match(/[0-9]/))) {
     document.getElementById("password_error").innerHTML = "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
     returnvalue = false;
   } 
-  else if (!(password.value.match(/[A-Z]/))) {
+  else if (!(password.value.trim().match(/[A-Z]/))) {
     document.getElementById("password_error").innerHTML =
       "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
     returnvalue = false;
   }
-  else if (!(password.value.match(/[a-z]/))) {
+  else if (!(password.value.trim().match(/[a-z]/))) {
     document.getElementById("password_error").innerHTML =
       "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
     returnvalue = false;
   }
-  else if (!(password.value.match(/[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/))) {
+  else if (!(password.value.trim().match(/[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/))) {
     document.getElementById("password_error").innerHTML =
       "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
     returnvalue = false;
   }
 
   // validation for confrim password
-  if (cpassword.value == "") {
+  if (cpassword.value.trim() == "") {
     document.getElementById("cpassword_error").innerHTML =
       "**Confirm Password is Required!";
     returnvalue = false;
@@ -95,3 +96,4 @@ function form_validation() {
 
   return returnvalue;
 }
+console.log(Name);

@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-:root{
+:root {
   --color: #fff;
 }
 
@@ -15,12 +15,12 @@ body {
   background-image: linear-gradient(to right, blue, rgb(8, 140, 184), blue);
 }
 
-.color{
+.color {
   color: var(--color);
 }
 
-.links:hover{
-text-decoration: none;
+.links:hover {
+  text-decoration: none;
 }
 
 .form_box {
@@ -46,7 +46,7 @@ text-decoration: none;
   margin-top: 30px;
 }
 
-.form_box form input{
+.form_box form input {
   margin: 10px 50px;
   padding: 10px;
   width: 70%;
@@ -74,14 +74,13 @@ text-decoration: none;
   z-index: -1;
   cursor: text;
 }
-.form_box .input_box input:focus ~ label
-,.form_box .input_box input:not(:placeholder-shown) ~ label
-{
+.form_box .input_box input:focus ~ label,
+.form_box .input_box input:not(:placeholder-shown) ~ label {
   position: absolute;
   top: 2px;
   z-index: 1;
   font-size: 14px;
-  padding: 0 5px;  
+  padding: 0 5px;
   color: black;
   background-color: var(--color);
   border-radius: 2px;
@@ -113,7 +112,7 @@ text-decoration: none;
   margin-top: 15px;
 }
 
-.forget{
+.forget {
   text-align: right;
   margin: 5px 80px;
 }
@@ -126,20 +125,20 @@ text-decoration: none;
   left: 0;
 }
 
-.error{
+.error {
   color: red;
   font-size: 14px;
   font-weight: bold;
   margin-left: 60px;
 }
 
-@media screen and (min-width:600px) and (max-width:1000px) {
-  .form_box{
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .form_box {
     width: 50%;
     /* margin: auto; */
     /* margin-top: 50px; */
   }
-  .form_box form input{
+  .form_box form input {
     margin-left: 50px;
   }
   .form_box .input_box input[type="submit"] {
@@ -147,8 +146,8 @@ text-decoration: none;
   }
 }
 
-@media screen and (max-width:599px) {
-  .form_box{
+@media screen and (max-width: 599px) {
+  .form_box {
     width: 80%;
     /* margin: auto; */
     margin-top: 20px;
@@ -156,21 +155,28 @@ text-decoration: none;
   .form_box h1 {
     font-size: 28px;
   }
-.form_box form input{
-  margin-left: 35px;
-}
-.form_box .input_box input[type="submit"] {
-  margin-left: 46px;
-}
-.form_box .input_box label {
-  position: absolute;
-  left: 55px;
-  top: 25px;
-}
-.forget{
-  margin: 5px 40px;
-}
-.error{
-  margin-left: 45px;
-}
+  .form_box form input {
+    margin-left: 35px;
+  }
+  .form_box .input_box input[type="submit"] {
+    margin-left: 46px;
+  }
+  .form_box .input_box label {
+    position: absolute;
+    left: 55px;
+    top: 25px;
+  }
+  .forget {
+    margin: 5px 42px;
+  }
+  .error {
+    margin-left: 42px;
+  }
+  .footer_detail {
+    margin-top: 100px;
+    position: relative;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+  }
 }
