@@ -100,7 +100,3 @@ function form_validation() {
 
   return returnvalue;
 }
-<<<<<<< HEAD:script.js
-
-=======
->>>>>>> 6287f1250719c65f313a54327fea230931bda846:index.js
