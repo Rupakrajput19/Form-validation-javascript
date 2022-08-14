@@ -20,12 +20,12 @@ function form_validation() {
   // validation for name
   if (name.value.trim() == "") {
     document.getElementById("name_error").innerHTML = "**Name is Required!";
-    returnvalue = false;
-<<<<<<< HEAD:script.js
-  } else if (Name.value.trim().length < 3 || Name.value.trim().length > 20) {
-=======
-  } else if (name.value.trim().length < 3 || name.value.trim().length > 20) {
->>>>>>> 6287f1250719c65f313a54327fea230931bda846:index.js
+     returnvalue = false;
+
+
+
+} else if (name.value.trim().length < 3 || name.value.trim().length > 20) {
+
     document.getElementById("name_error").innerHTML =
       "**Name must be in bettween 3 and 20 character.";
     returnvalue = false;
