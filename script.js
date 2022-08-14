@@ -21,7 +21,6 @@ function form_validation() {
   if (Name.value.trim() == "") {
     document.getElementById("name_error").innerHTML = "**Name is Required!";
     returnvalue = false;
-    console.log(Name);
   } else if (Name.value.trim().length < 3 || Name.value.trim().length > 20) {
     document.getElementById("name_error").innerHTML =
       "**Name must be in bettween 3 and 20 character.";
@@ -96,4 +95,4 @@ function form_validation() {
 
   return returnvalue;
 }
-console.log(Name);
+

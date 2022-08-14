@@ -25,12 +25,12 @@ function login_form_validation() {
   // validation for password
   if (login_password.value == "") {
       document.getElementById("login_password_error").innerHTML =
-        "**password is Required!";
+        "**Password is Required!";
       returnval = false;
     } 
     else if ((login_password.value.length < 8) || (login_password.value.length > 20)) {
       document.getElementById("login_password_error").innerHTML =
-      "**password must be in bettween 8 and 20 character.";
+      "**Password must be in bettween 8 and 20 character.";
       returnval = false;
     } 
     else if (login_password.value !== "Rupak19@#") {

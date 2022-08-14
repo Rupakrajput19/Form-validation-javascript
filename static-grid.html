@@ -23,56 +23,41 @@
         padding: 0;
       }
       body {
-        width: 100vw;
-        height: 100vh;
         background-color: antiquewhite;
         font-family: sans-serif;
       }
       .container {
-        margin: 50px;
+        margin: 100px 50px;
         border: 2px solid black;
+        box-sizing: border-box;
+        border-radius: 10px;
       }
       .container h1 {
-        margin: 20px;
+        margin: 30px;
         text-align: center;
         text-decoration: underline;
       }
       .container .grid_box {
-        border: 2px solid red;
+        margin: 10px;
+        /* border: 2px solid red; */
       }
       .container .grid_box .details {
-        border: 2px solid green;
+        /* border: 2px solid green; */
         display: grid;
         grid-template-columns: repeat(6, auto);
-        /* grid-template-rows: repeat(6, auto); */
-        column-gap: 10px;
-        row-gap: 10px;
+        grid-template-rows: repeat(6, auto);
+        column-gap: 6px;
+        row-gap: 1px;
+      }
+      .details h4{
+        text-align: center;
       }
       .container .grid_box .details > .item {
         border: 2px solid blue;
-        text-align: center;
+        text-align: start;
         box-sizing: border-box;
         padding: 5px;
-        /* width: 150px; */
-      }
-
-      .details .s_no {
-        width: 80px;
-      }
-      .details .user_id {
-        width: 120px;
-      }
-      .details .name {
-        width: 150px;
-      }
-      .details .email {
-        width: 250px;
-      }
-      .details .mobile {
-        width: 120px;
-      }
-      .details .password {
-        width: 150px;
+        width: 230px;
       }
       .footer_detail {
         text-align: center;
@@ -82,6 +67,12 @@
         left: 0;
         margin: 10px;
       }
+      @media screen and (min-width:600px) and (max-width:1000px) {
+        
+      }
+      @media screen and (min-width:599px) {
+        
+      }
     </style>
   </head>
   <body>
@@ -90,60 +81,60 @@
 
       <section class="grid_box">
         <div class="details">
-          <div class="item s_no"><h4>S. No.</h4></div>
-          <div class="item user_id"><h4>User ID</h4></div>
-          <div class="item name"><h4>Name</h4></div>
-          <div class="item email"><h4>Email ID</h4></div>
-          <div class="item mobile"><h4>Mobile Number</h4></div>
-          <div class="item password"><h4>Password</h4></div>
+          <div class="item"><h4>S. No.</h4></div>
+          <div class="item"><h4>User ID</h4></div>
+          <div class="item"><h4>Name</h4></div>
+          <div class="item"><h4>Email ID</h4></div>
+          <div class="item"><h4>Mobile Number</h4></div>
+          <div class="item"><h4>Password</h4></div>
         </div>
         <div class="details">
-          <div class="item s_no"><detail>1.</detail></div>
-          <div class="item user_id"><detail>Ritu2000</detail></div>
-          <div class="item name"><detail>Ritu kumar</detail></div>
-          <div class="item email">
-            <detail>Ritukumar456061@gmail.com</detail>
+          <div class="item"><detail>1.</detail></div>
+          <div class="item"><detail>ritu2000</detail></div>
+          <div class="item"><detail>Ritu kumar</detail></div>
+          <div class="item">
+            <detail>ritukumar456061@gmail.com</detail>
           </div>
-          <div class="item mobile"><detail>9599408303</detail></div>
-          <div class="item password"><detail>Ritu2022@#</detail></div>
+          <div class="item"><detail>9599408303</detail></div>
+          <div class="item"><detail>Ritu2022@#</detail></div>
         </div>
         <div class="details">
-          <div class="item s_no"><detail>2.</detail></div>
-          <div class="item user_id"><detail>rupak2022</detail></div>
-          <div class="item name"><detail>Rupak Rajput</detail></div>
-          <div class="item email">
+          <div class="item"><detail>2.</detail></div>
+          <div class="item"><detail>rupak2022</detail></div>
+          <div class="item"><detail>Rupak Rajput</detail></div>
+          <div class="item">
             <detail>rupakrajput161@gmail.com</detail>
           </div>
-          <div class="item mobile"><detail>7065308276</detail></div>
-          <div class="item password"><detail>Rupak@182116111</detail></div>
+          <div class="item"><detail>7065308276</detail></div>
+          <div class="item"><detail>Rupak@182116111#</detail></div>
         </div>
         <div class="details">
-          <div class="item s_no"><detail>3.</detail></div>
-          <div class="item user_id"><detail>abhishek1998</detail></div>
-          <div class="item name"><detail>Abhishek</detail></div>
-          <div class="item email"><detail>abhik8527@gmail.com</detail></div>
-          <div class="item mobile"><detail>8527752633</detail></div>
-          <div class="item password"><detail>@bhishek23</detail></div>
+          <div class="item"><detail>3.</detail></div>
+          <div class="item"><detail>abhishek1998</detail></div>
+          <div class="item"><detail>Abhishek</detail></div>
+          <div class="item"><detail>abhik8527@gmail.com</detail></div>
+          <div class="item"><detail>8527752633</detail></div>
+          <div class="item"><detail>@bhishek23</detail></div>
         </div>
         <div class="details">
-          <div class="item s_no"><detail>4.</detail></div>
-          <div class="item user_id"><detail>deepak1995</detail></div>
-          <div class="item name"><detail>Deepak</detail></div>
-          <div class="item email"><detail>deepak1913@gmail.com</detail></div>
-          <div class="item mobile"><detail>9234567891</detail></div>
-          <div class="item password"><detail>Deepak@1913</detail></div>
+          <div class="item"><detail>4.</detail></div>
+          <div class="item"><detail>deepak1995</detail></div>
+          <div class="item"><detail>Deepak</detail></div>
+          <div class="item"><detail>deepak1913@gmail.com</detail></div>
+          <div class="item"><detail>9234567891</detail></div>
+          <div class="item"><detail>Deepak@1913</detail></div>
         </div>
         <div class="details">
-          <div class="item s_no"><detail>5.</detail></div>
-          <div class="item user_id"><detail>rajat2003</detail></div>
-          <div class="item name"><detail>Rajat kumar</detail></div>
-          <div class="item email"><detail>rajatkumar@gmail.com</detail></div>
-          <div class="item mobile"><detail>9876543210</detail></div>
-          <div class="item password"><detail>rajat@19</detail></div>
+          <div class="item"><detail>5.</detail></div>
+          <div class="item"><detail>rajat2003</detail></div>
+          <div class="item"><detail>Rajat kumar</detail></div>
+          <div class="item"><detail>rajatkumar@gmail.com</detail></div>
+          <div class="item"><detail>9876543210</detail></div>
+          <div class="item"><detail>rajat@19</detail></div>
         </div>
       </section>
     </main>
-      
+
       <footer class="footer_detail">
           <p>
               Desing & Developed By &copy;
@@ -152,5 +143,6 @@
               >
             </p>
         </footer>
+        </script>
   </body>
 </html>
