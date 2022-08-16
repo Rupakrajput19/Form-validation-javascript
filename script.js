@@ -21,22 +21,17 @@ function form_validation() {
   if (name.value.trim() == "") {
     document.getElementById("name_error").innerHTML = "**Name is Required!";
     returnvalue = false;
-<<<<<<< HEAD:script.js
-  } else if (Name.value.trim().length < 3 || Name.value.trim().length > 20) {
-=======
   } else if (name.value.trim().length < 3 || name.value.trim().length > 20) {
->>>>>>> 6287f1250719c65f313a54327fea230931bda846:index.js
     document.getElementById("name_error").innerHTML =
       "**Name must be in bettween 3 and 20 character.";
     returnvalue = false;
   } else if (!isNaN(name.value.trim())) {
-    document.getElementById("name_error").innerHTML =
-      "**Enter character only.";
+    document.getElementById("name_error").innerHTML = "**Enter character only.";
     returnvalue = false;
   }
 
   // validation for email
-  if (email.value.trim() == ""){
+  if (email.value.trim() == "") {
     document.getElementById("email_error").innerHTML = "**Email is Required!";
     returnvalue = false;
   }
@@ -61,38 +56,40 @@ function form_validation() {
     document.getElementById("password_error").innerHTML =
       "**Password is Required!";
     returnvalue = false;
-  } else if (password.value.trim().length < 8 || password.value.trim().length > 20) {
+  } else if (
+    password.value.trim().length < 8 ||
+    password.value.trim().length > 20
+  ) {
     document.getElementById("password_error").innerHTML =
       "**Password must be in bettween 8 and 20 character.";
     returnvalue = false;
+  } else if (!password.value.trim().match(/[0-9]/)) {
+    document.getElementById("password_error").innerHTML =
+      "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
+    returnvalue = false;
+  } else if (!password.value.trim().match(/[A-Z]/)) {
+    document.getElementById("password_error").innerHTML =
+      "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
+    returnvalue = false;
+  } else if (!password.value.trim().match(/[a-z]/)) {
+    document.getElementById("password_error").innerHTML =
+      "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
+    returnvalue = false;
   } else if (
-    !(password.value.trim().match(/[0-9]/))) {
-    document.getElementById("password_error").innerHTML = 
-      "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
-    returnvalue = false;
-  } 
-  else if (!(password.value.trim().match(/[A-Z]/))) {
-    document.getElementById("password_error").innerHTML =
-      "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
-    returnvalue = false;
-  }
-  else if (!(password.value.trim().match(/[a-z]/))) {
-    document.getElementById("password_error").innerHTML =
-      "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
-    returnvalue = false;
-  }
-  else if (!(password.value.trim().match(/[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/))) {
+    !password.value.trim().match(/[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/)
+  ) {
     document.getElementById("password_error").innerHTML =
       "**Password should containt atleast 1 Number, 1 Special Symblol, 1 Uppercase & 1 Lowercase character.";
     returnvalue = false;
   }
 
   // validation for confrim password
-  if (cpassword.value.trim() == "") {
-    document.getElementById("cpassword_error").innerHTML =
-      "**Confirm Password is Required!";
-    returnvalue = false;
-  } else if (password.value !== cpassword.value) {
+  // if (cpassword.value == "") {
+  //   document.getElementById("cpassword_error").innerHTML =
+  //     "**Confirm Password is Required!";
+  //   returnvalue = false;
+  // } else
+   if (password.value !== cpassword.value) {
     document.getElementById("cpassword_error").innerHTML =
       "**Password must be same as above.";
     returnvalue = false;
@@ -100,7 +97,3 @@ function form_validation() {
 
   return returnvalue;
 }
-<<<<<<< HEAD:script.js
-
-=======
->>>>>>> 6287f1250719c65f313a54327fea230931bda846:index.js

@@ -13,6 +13,7 @@ body {
   color: var(--color);
   font-family: sans-serif;
   background-image: linear-gradient(to right, blue, rgb(8, 140, 184), blue);
+  scroll-behavior: smooth;
 }
 
 .color {
