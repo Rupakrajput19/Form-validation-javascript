@@ -32,7 +32,7 @@
         box-sizing: border-box;
         border-radius: 10px;
       }
-      .container h1 {
+      .container :is(h1,h3){
         margin: 30px 0;
         text-align: center;
         text-decoration: underline;
@@ -83,11 +83,17 @@
         background-color: #aaa;
       }
       }
+      @media screen and (max-width:600px) {
+        .container{
+        margin: 50px 15px;
+        }
+      }
     </style>
   </head>
   <body>
     <main class="container">
       <h1>Spraxa Solution Pvt. Ltd.</h1>
+      <h3>User Details</h3>
 
       <section class="grid_box">
         <div class="details">
