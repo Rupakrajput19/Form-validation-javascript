@@ -20,17 +20,17 @@ function form_validation() {
   // validation for name
   if (name.value.trim() == "") {
     document.getElementById("name_error").innerHTML = "**Name is Required!";
-<<<<<<< HEAD
+
     returnvalue = false;
-  } else if (name.value.trim().length < 3 || name.value.trim().length > 20) {
-=======
-     returnvalue = false;
+
+
+
 
 
 
 } else if (name.value.trim().length < 3 || name.value.trim().length > 20) {
 
->>>>>>> ba6640b3961f1f9b5f6de52efb30a91c76f2765a
+
     document.getElementById("name_error").innerHTML =
       "**Name must be in bettween 3 and 20 character.";
     returnvalue = false;
