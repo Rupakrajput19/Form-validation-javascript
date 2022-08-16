@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <meta name="author" content="Ritu Kumar">
+    <meta name="description" content="Login Form for user Login at Spraxa Solution Pvt. Ltd.">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="faveicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="form_box">
+      <h1>LOGIN Form</h1>
+      <form
+        action="static-grid.html"
+        autocomplete="off"
+        onsubmit="return login_form_validation()"
+      >
+        <div class="input_box">
+          <input type="text" name="email" placeholder=" " id="login_email" />
+          <label for="email">Your Email</label>
+          <p id="login_email_error" class="error"></p>
+        </div>
+
+        <div class="input_box">
+          <input
+            type="password"
+            name="password"
+            placeholder=" "
+            id="login_password"
+          />
+          <label for="password">Password</label>
+          <p id="login_password_error" class="error"></p>
+        </div>
+
+        <div class="input_box">
+          <input type="submit" name="submit" value="Submit" id="submit" />
+        </div>
+
+        <div class="forget">
+          <a href="#" class="color links">Forgot Password?</a>
+        </div>
+
+        <div class="account">
+          <p>Don't have an account? <a href="index.html" class="color links">SINGUP</a></p>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer_detail extra_margin_bottom">
+      <p>
+        Desing & Developed By &copy;
+        <a href="https://www.spraxa.com/" target="_blank"
+           class="color links">Spraxa Solution Pvt. Ltd.</a
+        >
+      </p>
+    </footer>
+    <script src="login-form.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

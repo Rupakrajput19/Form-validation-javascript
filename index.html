@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ritu Kumar">
+    <meta name="description" content="Registration Form for user Registration at Spraxa Solution Pvt. Ltd.">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="faveicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="form_box">
+      <h1>Registration Form</h1>
+      <form action="Login-form.html" autocomplete="off" onsubmit="return form_validation()">
+        <div class="input_box">
+          <input type="text" name="name" placeholder=" " id="name"/>
+          <label for="name">Name</label>
+          <p id="name_error" class="error"></p>
+        </div>
+
+        <div class="input_box">
+          <input type="text" name="email" placeholder=" " id="email"/>
+          <label for="email">Your Email</label>
+          <p id="email_error" class="error"></p>
+        </div>
+
+        <div class="input_box">
+          <input type="tel" maxlength="10" name="phone" placeholder=" " id="mobile"/>
+          <label for="phone">Mobile Number</label>
+          <p id="mobile_error" class="error"></p>
+        </div>
+
+        <div class="input_box">
+          <input type="password" name="password" placeholder=" " id="password"/>
+          <label for="password">Password</label>
+          <p id="password_error" class="error"></p>
+        </div>
+
+        <div class="input_box">
+          <input type="password" name="cpassword" placeholder=" " id="cpassword"/>
+          <label for="cpassword">Confirm Password</label>
+          <p id="cpassword_error" class="error"></p>
+        </div>
+
+        <div class="input_box">
+          <input type="submit" name="submit" value="Submit" id="submit" onclick="data_stored()"/>
+        </div>
+
+        <div class="account">
+          <p>Already have an account? <a href="Login-form.html" class="links color">LOGIN</a></p>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer_detail">
+      <p>
+        Desing & Developed By &copy;
+        <a href="https://www.spraxa.com/" target="_blank"
+           class="links color">Spraxa Solution Pvt. Ltd.</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="login-form.js"></script>
+  </body>
+</html>
