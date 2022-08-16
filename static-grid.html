@@ -31,14 +31,26 @@
         border: 2px solid black;
         box-sizing: border-box;
         border-radius: 10px;
+        overflow-x: scroll;
+      }
+      .container::-webkit-scrollbar{
+        height: 10px;
+      }
+      .container::-webkit-scrollbar-track{
+        border-radius: 10px;
+        background-color: #ccc;
+      }
+      .container::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: #aaa;
       }
       .container h1 {
-        margin: 30px;
+        margin: 30px 0;
         text-align: center;
         text-decoration: underline;
       }
       .container .grid_box {
-        margin: 10px;
+        margin: 10px 20px;
         /* border: 2px solid red; */
       }
       .container .grid_box .details {
@@ -57,7 +69,7 @@
         text-align: start;
         box-sizing: border-box;
         padding: 5px;
-        width: 230px;
+        width: 225px;
       }
       .footer_detail {
         text-align: center;
@@ -66,16 +78,6 @@
         right: 0;
         left: 0;
         margin: 10px;
-      }
-      @media screen and (min-width:600px) and (max-width:1000px) {
-        body{
-          width: 150%;
-        }
-      }
-      @media screen and (min-width:599px) {
-        body{
-          width: 200%;
-        }
       }
     </style>
   </head>
