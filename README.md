@@ -1,4 +1,4 @@
-# Form-validation-Javascript
+# Form-Validation-Javascript
 
 Deployment Link:- https://rupakrajput19.github.io/Form-validation-javascript/
 
